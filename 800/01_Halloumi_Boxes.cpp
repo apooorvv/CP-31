@@ -7,13 +7,13 @@ int main(){
     while(t--){
 
         //INPUT
-        long long n,k;
+        int n,k;
         cin>>n>>k;
-        vector<long long> a(n);
+        vector<int> a(n);
         for(int i=0; i<n; i++) //n
             cin>>a[i];
 
-        vector<long long> copy_a = a; //n
+        vector<int> copy_a = a; //n
         sort(copy_a.begin(), copy_a.end()); //nlogn
 
         if(copy_a == a || k > 1){  //n
